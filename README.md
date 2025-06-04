@@ -1,5 +1,13 @@
 # Word Count Analyzer 📊
 
+<div align="center">
+  <img src="https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Express.js-404D59?logo=express" alt="Express">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Multer-F46519?logo=ipfs" alt="Multer">
+  <img src="https://img.shields.io/badge/EJS-8A2BE2" alt="EJS">
+</div>
+
 Aplikasi web yang dibuat dengan ExpressJS yang menganalisis berkas teks (.txt) dan menyediakan statistik jumlah kata, jumlah karakter, dan jumlah baris. Dilengkapi dengan fungsi pengunggahan berkas dan antarmuka pengguna yang bersih.
 
 ## ✨ Fitur 
