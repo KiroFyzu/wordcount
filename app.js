@@ -5,7 +5,6 @@ const multer = require('multer');
 const app = express();
 const PORT = 3000;
 
-// Configure multer for file uploads
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         const uploadDir = 'uploads/';
@@ -21,7 +20,6 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-// Set view engine to EJS
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -30,7 +28,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Routes API
 app.get('/', (req, res) => {
     res.render('index');
 });
