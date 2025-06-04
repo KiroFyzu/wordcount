@@ -17,7 +17,6 @@ document.getElementById('uploadForm').addEventListener('submit', async (e) => {
         
         const data = await response.json();
         
-        // Display results
         document.getElementById('filename').textContent = data.filename;
         document.getElementById('wordCount').textContent = data.wordCount;
         document.getElementById('charCount').textContent = data.characterCount;
