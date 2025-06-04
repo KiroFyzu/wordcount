@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Count Analyzer</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word Count Analyzer</h1>
+        <p>Upload a .txt file to analyze its word count, character count, and line count.</p>
+        
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="textfile" accept=".txt" required>
+            <button type="submit">Analyze</button>
+        </form>
+        
+        <div id="result" class="hidden">
+            <h2>Analysis Results</h2>
+            <p><strong>Filename:</strong> <span id="filename"></span></p>
+            <p><strong>Word Count:</strong> <span id="wordCount"></span></p>
+            <p><strong>Character Count:</strong> <span id="charCount"></span></p>
+            <p><strong>Line Count:</strong> <span id="lineCount"></span></p>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
